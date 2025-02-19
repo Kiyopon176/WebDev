@@ -11,12 +11,25 @@ document.querySelector("#myInput").addEventListener("keydown", function(e) {
     }
 });
 
+let student = {
+    name: "John",
+    age: 30,
+    isMarried: false,
+    "works at": "Google",
+    "full name": {
+        first: "John",
+        last: "Doe"
+    }
+}
+
 //-------GETTING VALUES FROM INPUT TO ARRAY OF OBJECTS-------
 function addTodo() {
     const todoText = document.querySelector("#myInput").value;
 
+    alert(student.name);
+
     if (todoText == "") {
-        alert("You did not enter any item");
+        alert("You did not item");
     } else {
         const todoObject = {
             id: todoList.length,

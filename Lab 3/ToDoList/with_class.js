@@ -1,5 +1,16 @@
 const todoObjectList = [];
 
+class Student {
+    constructor(name, age, school) {
+        this.name = name;
+        this.age = age;
+        this.school = school;
+    }
+
+    display() {
+        console.log(this.name, this.age, this.school);
+    }
+}
 
 
 class Todo_Class {
