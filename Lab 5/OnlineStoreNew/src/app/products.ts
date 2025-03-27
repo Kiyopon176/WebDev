@@ -10,8 +10,9 @@ export interface Product {
   likes:number
 }
 
-export function setLike(product : Product){
-  product.likes += 1;
+export function setLike(product: Product) {
+  // Toggle likes using a function
+  product.likes = product.likes > 0 ? 0 : 1;
 }
 
 export const products = [

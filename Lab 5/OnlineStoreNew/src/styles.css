@@ -9,10 +9,21 @@ h2{
   font-size: 30px;
 }
 
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body{
   /*background-color: #121517; */
   /*background-image: url("/assets/background2.jpg");*/
   background-image: url("/assets/background2.jpg");
-  background-repeat: repeat-y;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
 }
 

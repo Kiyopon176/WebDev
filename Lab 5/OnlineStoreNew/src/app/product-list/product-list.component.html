@@ -9,7 +9,6 @@
     <img [src]="product.img" class="images">
   </div>
 
-
   <div class="line"></div>
 
   <p *ngIf="product.description">
@@ -19,9 +18,21 @@
     Rating: {{ product.rating }} ★
   </p>
 
-  <button id="bt_share" type="button" (click)="share(product.url)">
-    Share
-  </button>
+  <div class="button-group">
+    <button id="bt_share" type="button" (click)="share(product.url)">
+      Share
+    </button>
+    
+    <button id="bt_like" type="button" (click)="toggleLike(product)">
+      {{ isLiked(product) ? '❤️ Liked' : '🤍 Like' }}
+    </button>
+    
+    <button id="bt_delete" type="button" (click)="deleteProduct(product)">
+      🗑️ Delete
+    </button>
+    
+    <span *ngIf="isLiked(product)" class="like-message">You liked this product!</span>
+  </div>
 
   <app-product-alerts
     [product]="product"

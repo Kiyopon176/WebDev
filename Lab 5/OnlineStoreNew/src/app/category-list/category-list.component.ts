@@ -14,6 +14,5 @@ export class CategoryListComponent {
   changeCategory(cat : Category){
     this.currentCategory = cat
   }
-
 }
 

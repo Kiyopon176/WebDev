@@ -68,5 +68,47 @@ p{
   transition: 0.5s;
 }
 
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#bt_like {
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#bt_like:hover {
+  background-color: #f0f0f0;
+}
+
+#bt_delete {
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#bt_delete:hover {
+  background-color: #ff4d4d;
+  color: white;
+  border-color: #ff4d4d;
+}
+
+.like-message {
+  color: #e41e3f;
+  font-size: 0.9em;
+}
+
 
 

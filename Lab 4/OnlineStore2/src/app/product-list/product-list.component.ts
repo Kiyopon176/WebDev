@@ -12,7 +12,7 @@ export class ProductListComponent {
   products = [...products];
 
   share(url: string) {
-    var sharelink = "https://t.me/share/url?url="+url;
+    let sharelink = "https://t.me/share/url?url="+url;
     window.open(sharelink);
   }
 
