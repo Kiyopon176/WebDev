@@ -5,7 +5,7 @@ urlpatterns = [
     path('products1/', views.product_list1),
     path('categories1/', views.category_list1),
     path('products/add/', views.add_product),  # Add this new route
-
+    path('users/', views.get_user),
     path('home/', views.home),
     path('about/', views.about),
 

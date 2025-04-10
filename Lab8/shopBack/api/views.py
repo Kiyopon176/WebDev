@@ -19,6 +19,11 @@ def category_list1(request):
     categories_json = [c.to_json() for c in categories1]
     return JsonResponse(categories_json, safe=False)
 
+def get_user(request):
+    users = Person.objects.all()
+    users_json = [u.to_json() for u in users]
+    return JsonResponse(users_json, safe=False)
+
 @csrf_exempt
 def add_product(request):
     if request.method == 'POST':
